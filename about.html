@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UN SDGs</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/SDG-Wheel_WEB-600x600-removebg-preview.png">
+
+    <script type="module">
+        import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+      
+        const widget = await Chatbox.initBubble({
+          agentId: 'cm04w9jup00cqljwkd3ruk2o8',
+          
+          contact: {
+            firstName: 'User',
+            lastName: 'Doe',
+            email: 'customer@email.com',
+            phoneNumber: '+33612345644',
+            userId: '42424242',
+          },
+        
+          initialMessages: [
+            'Hello User how are you doing today?',
+            'How can I help you ?',
+          ],
+   
+          context: "The user you are talking to is User. Start by Greeting him by his name.",
+        });
+      
+        // open the chat bubble
+        widget.open();
+      
+        // close the chat bubble
+        widget.close()
+      
+        // or 
+        widget.toggle()
+      </script>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            
+        }
+
+        .content {
+            text-align: center;
+        }
+        .emblem{
+            margin: 30px;
+        }
+
+        .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .circle {
+            height: 200px;
+            width: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 0;
+        }
+
+        .sdg-icon {
+            height: 200px;
+            width: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+            margin: 10px;
+            padding: 0;
+        }
+       
+
+            .one{
+                background-image: url(/E-WEB-Goal-01.png);
+            }
+
+            .one:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-01.png);
+            }
+
+            .two{
+                background-image: url(/E-WEB-Goal-02.png);
+            }
+
+            .two:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-02.png);
+            }
+
+            .three{
+                background-image: url(/E-WEB-Goal-03.png);
+            }
+
+            .three:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-03.png);
+            }
+
+            .four{
+                background-image: url(/E-WEB-Goal-04.png);
+            }
+
+            .four:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-04.png);
+            }
+
+            .five{
+                background-image: url(/E-WEB-Goal-05.png);
+            }
+
+            .five:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-05.png);
+            }
+
+            .six{
+                background-image: url(/E-WEB-Goal-06.png);
+            }
+
+            .six:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-06.png);
+            }
+
+            .seven{
+                background-image: url(/E-WEB-Goal-07.png);
+            }
+
+            .seven:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-07.png);
+            }
+
+            .eight{
+                background-image: url(/E-WEB-Goal-08.png);
+            }
+
+            .eight:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-08.png);
+            }
+
+            .nine{
+                background-image: url(/E-WEB-Goal-09.png);
+            }
+
+            .nine:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-09.png);
+            }
+
+            .ten{
+                background-image: url(/E-WEB-Goal-10.png);
+            }
+
+            .ten:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-10.png);
+            }
+
+            .eleven{
+                background-image: url(/E-WEB-Goal-11.png);
+            }
+
+            .eleven:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-11.png);
+            }
+
+            .twelve{
+                background-image: url(/E-WEB-Goal-12.png);
+            }
+
+            .twelve:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-12.png);
+            }
+
+            .thirteen{
+                background-image: url(/E-WEB-Goal-13.png);
+            }
+
+            .thirteen:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-13.png);
+            }
+
+            .fourteen{
+                background-image: url(/E-WEB-Goal-14.png);
+            }
+
+            .fourteen:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-14.png);
+            }
+
+            .fifteen{
+                background-image: url(/E-WEB-Goal-15.png);
+            }
+
+            .fifteen:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-15.png);
+            }
+
+            .sixteen{
+                background-image: url(/E-WEB-Goal-16.png);
+            }
+
+            .sixteen:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-16.png);
+            }
+
+            .seventeen{
+                background-image: url(/E-WEB-Goal-17.png);
+            }
+
+            .seventeen:hover{
+                background-image: url(/E\ Inverted\ Icons_WEB-17.png);
+            }
+
+        .circle {
+            position: relative;
+            height: 200px;
+            width: 200px;
+    
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            animation: rotation 8s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            z-index: 10; /* Ensures the text stays on top */
+            line-height: 20px;
+        }
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+        position: relative;
+        background-color: transparent;
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        border-bottom: 2px solid #00becf;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+        float: left;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+        background-color: #ddd;
+        color: #00becf
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+        background-color: #00becf;
+        color: white;
+        }
+
+        /* Centered section inside the top navigation */
+        .topnav-centered a {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        /* Right-aligned section inside the top navigation */
+        .topnav-right {
+        float: right;
+        }
+
+        /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+        @media screen and (max-width: 600px) {
+        .topnav a, .topnav-right {
+            float: none;
+            display: block;
+        }
+
+        .topnav-centered a {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+        }
+        }
+
+        .sdgline{
+            height: 30px;
+            width: auto;
+        }
+
+        .linecol{
+            background-image: url(/bootstrap-5.3.3-dist/sdg-banner-small.png);
+            background-size: contain;
+        }
+        .linerow{
+            margin-top: -10px;
+           
+        }
+
+        iframe{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .row1 {
+            margin: 30px 0px 0px;
+            font-size: 18px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        .col1 {
+            font-size: 35px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+    
+    <!-- Top navigation -->
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+        <a href="/page1.html" class="">UN SDGs</a>
+        </div>
+    
+        <!-- Left-aligned links (default) -->
+        <a href="/page1.html">Home</a>
+        <a href="/page2.html">About</a>
+    
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+        <a href="https://sdgs.un.org/goals">Resources</a>
+        <a href="https://www.undp.org/sustainable-development-goals">Links</a>
+        </div>
+    
+    </div>
+        <div class="row justify-content-center">
+            <div class="col-auto emblem">
+                <a class="image-link" href="/page1.html">
+                <img src="/E_SDG_logo_UN_emblem_horizontal_trans_WEB-1200x188.png" style="width: 600px; height: auto;">
+                </a>
+            </div>
+        </div>
+
+        <div class="row container-fluid row1">
+            <div class="col col1">
+                What are the <br> Sustainable <br>Development Goals?
+            </div>
+            <div class="col col2">
+                The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United
+                Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by
+                2030 all people enjoy peace and prosperity.<br><br>
+
+                The 17 SDGs are integrated—they recognize that action in one area will affect outcomes in others, and
+                that development must balance social, economic and environmental sustainability.<br><br>
+
+                Countries have committed to prioritize progress for those who're furthest behind. The SDGs are designed
+                to end poverty, hunger, AIDS, and discrimination against women and girls.<br><br>
+
+                The creativity, knowhow, technology and financial resources from all of society is necessary to achieve
+                the SDGs in every context.
+            </div>
+        </div>
+
+        <div class="row container-fluid row1">
+            <div class="col col1">
+                Do you know all 17 SDGs?
+            </div>
+            <div class="col">
+                <iframe width="545" height="300" src="https://www.youtube.com/embed/0XTBYMfZyrM?si=4xeNiaT9UMELltyZ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

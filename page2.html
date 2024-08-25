@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UN SDGs</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/SDG-Wheel_WEB-600x600-removebg-preview.png">
+    <!-- FontAwesome Icons -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <script type="module">
+        import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+
+        const widget = await Chatbox.initBubble({
+            agentId: 'cm04w9jup00cqljwkd3ruk2o8',
+
+        
+        });
+
+        // open the chat bubble
+        widget.open();
+
+        // close the chat bubble
+        widget.close()
+
+        // or 
+        widget.toggle()
+    </script>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .content {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+
+        .emblempic{
+            margin-top: 30px;
+            height: auto;
+            width: 600px;
+        }
+
+        .sdgline {
+            height: 30px;
+            width: auto;
+        }
+
+        .linecol {
+            background-image: url(/bootstrap-5.3.3-dist/sdg-banner-small.png);
+            background-size: contain;
+        }
+
+        .linerow {
+            margin-top: -10px;
+
+        }
+
+        iframe {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .row1 {
+            margin: 30px 0px 0px;
+            font-size: 18px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        .col1 {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .colhistory {
+            font-size: 35px;
+            font-weight: 600;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #019cd9;
+        }
+
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+            position: relative;
+            background-color: transparent;
+            overflow: hidden;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            border-bottom: 2px solid #019cd9;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: #019cd9
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #019cd9;
+            color: white;
+        }
+
+        /* Centered section inside the top navigation */
+        .topnav-centered a {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Right-aligned section inside the top navigation */
+        .topnav-right {
+            float: right;
+        }
+
+        /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+        @media screen and (max-width: 600px) {
+
+            .topnav a,
+            .topnav-right {
+                float: none;
+                display: block;
+            }
+
+            .topnav-centered a {
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: none;
+            }
+        }
+
+        .textcol{
+            border-left: 2px solid #019cd9;
+            padding-left: 20px;
+        }
+
+  
+
+        *,
+        *::before,
+        *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        h1 {
+        text-align: center;
+        }
+
+        ul {
+        --col-gap: 2rem;
+        --row-gap: 2rem;
+        --line-w: 0.25rem;
+        display: grid;
+        grid-template-columns: var(--line-w) 1fr;
+        grid-auto-columns: max-content;
+        column-gap: var(--col-gap);
+        list-style: none;
+        width: min(60rem, 90%);
+        margin-inline: auto;
+        
+        }
+
+        /* line */
+        ul::before {
+        content: "";
+        grid-column: 1;
+        grid-row: 1 / span 20;
+        background: rgb(225, 225, 225);
+        border-radius: calc(var(--line-w) / 2);
+        }
+
+        /* columns*/
+
+        /* row gaps */
+        ul li:not(:last-child) {
+        margin-bottom: var(--row-gap);
+        }
+
+        /* card */
+        ul li {
+        grid-column: 2;
+        --inlineP: 1.5rem;
+        margin-inline: var(--inlineP);
+        grid-row: span 2;
+        display: grid;
+        grid-template-rows: min-content min-content min-content;
+        
+        }
+
+        /* date */
+        ul li .date {
+        --dateH: 3rem;
+        height: var(--dateH);
+        margin-inline: calc(var(--inlineP) * -1);
+
+        text-align: center;
+        background-color: var(--accent-color);
+
+        color: white;
+        font-size: 1.25rem;
+        font-weight: 700;
+
+        display: grid;
+        place-content: center;
+        position: relative;
+
+        border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+        }
+
+        /* date flap */
+        ul li .date::before {
+        content: "";
+        width: var(--inlineP);
+        aspect-ratio: 1;
+        background: var(--accent-color);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.1) 100%, transparent);
+        position: absolute;
+        top: 100%;
+
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+        right: 0;
+        }
+
+        /* circle */
+        ul li .date::after {
+        content: "";
+        position: absolute;
+        width: 2rem;
+        aspect-ratio: 1;
+        background: var(--bgColor);
+        border: 0.3rem solid var(--accent-color);
+        border-radius: 50%;
+        top: 50%;
+
+        transform: translate(50%, -50%);
+        right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+        }
+
+        /* title descr */
+        ul li .title,
+        ul li .descr {
+        background: var(--bgColor);
+        position: relative;
+        padding-inline: 1.5rem;
+        
+        }
+        ul li .title {
+        overflow: hidden;
+        padding-block-start: 1.5rem;
+        padding-block-end: 1rem;
+        font-weight: 600;
+        font-size: 24px;
+        }
+        ul li .descr {
+        padding-block-end: 1.5rem;
+        font-weight: 300;
+        font-size: 18px;
+        
+        }
+
+        /* shadows */
+        ul li .title::before,
+        ul li .descr::before {
+        content: "";
+        position: absolute;
+        width: 90%;
+        height: 0.5rem;
+        background: rgba(0, 0, 0, 0.1);
+        left: 50%;
+        border-radius: 50%;
+        filter: blur(4px);
+        transform: translate(-50%, 50%);
+        }
+        ul li .title::before {
+        bottom: calc(100% + 0.125rem);
+        }
+
+        ul li .descr::before {
+        z-index: -1;
+        bottom: 0.25rem;
+        }
+
+        @media (min-width: 40rem) {
+        ul {
+            grid-template-columns: 1fr var(--line-w) 1fr;
+        }
+        ul::before {
+            grid-column: 2;
+        }
+        ul li:nth-child(odd) {
+            grid-column: 1;
+        }
+        ul li:nth-child(even) {
+            grid-column: 3;
+        }
+
+        /* start second card */
+        ul li:nth-child(2) {
+            grid-row: 2/4;
+        }
+
+        ul li:nth-child(odd) .date::before {
+            clip-path: polygon(0 0, 100% 0, 100% 100%);
+            left: 0;
+        }
+
+        ul li:nth-child(odd) .date::after {
+            transform: translate(-50%, -50%);
+            left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+        }
+        ul li:nth-child(odd) .date {
+            border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+        }
+        }
+
+        .credits {
+        margin-top: 1rem;
+        text-align: right;
+        }
+        .credits a {
+        color: var(--color);
+        }
+
+        .wrapper {
+        position: relative;
+        width: 80vw;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        }
+        .container {
+        width: 28vmin;
+        height: 28vmin;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1em 0;
+        position: relative;
+        font-size: 16px;
+        border-radius: 0.5em;
+        background-color: transparent;
+        border-bottom: 2px solid #019cd9;
+        }
+        i {
+        color: #019cd9;
+        font-size: 2.5em;
+        text-align: center;
+        }
+        span.num {
+        color: #019cd9;
+        display: grid;
+        place-items: center;
+        font-weight: 600;
+        font-size: 3em;
+        }
+        span.text {
+        color: #000;
+        font-size: 1em;
+        text-align: center;
+        pad: 0.7em 0;
+        font-weight: 600;
+        line-height: 0;
+        }
+        @media screen and (max-width: 1024px) {
+        .wrapper {
+            width: 85vw;
+        }
+        .container {
+            height: 26vmin;
+            width: 26vmin;
+            font-size: 12px;
+        }
+        }
+        @media screen and (max-width: 768px) {
+        .wrapper {
+            width: 90vw;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .container {
+            width: calc(50% - 40px);
+            height: 30vmin;
+            font-size: 14px;
+        }
+        .emblempic{
+            height: auto;
+            width: 500px;
+        }
+        .col1 {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 15px;
+        
+        }
+        .textcol{
+            font-size: 16px;
+        }
+        }
+        @media screen and (max-width: 480px) {
+        .wrapper {
+            gap: 15px;
+          
+        }
+        .container {
+            width: 100%;
+            height: 25vmin;
+            font-size: 8px;
+            
+        }
+        .emblempic{
+            height: auto;
+            width: 400px;
+        }
+        }
+
+        
+        
+
+        .row {
+        margin: 8px -16px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+        justify-content: center;
+  
+        display: none; /* Hide columns by default */
+        }
+        /* Clear floats after rows */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        /* Content */
+        .content1 {
+        background-color: white;
+        padding: 10px;
+        }
+
+        h4{
+            font-size: 20px;
+            padding-top: 10px;
+        }
+
+        .row,
+        .row > .column {
+        padding: 8px;
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+        display: block;
+        }
+
+
+        /* Style the buttons */
+        .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+        }
+
+        /* Add a grey background color on mouse-over */
+        .btn:hover {
+        background-color: #ddd;
+        }
+
+        /* Add a dark background color to the active button */
+        .btn.active {
+        background-color: #666;
+        color: white;
+        }
+        .grid{
+            box-sizing: border-box;
+            padding: 20px;
+            
+        }
+        
+
+
+        /* SDG Goal Colors */
+        .sdg-1 .accordion-button { background-color: #E5243B !important; }  /* No Poverty */
+        .sdg-2 .accordion-button { background-color: #DDA63A !important; }  /* Zero Hunger */
+        .sdg-3 .accordion-button { background-color: #4C9F38 !important; }  /* Good Health and Well-being */
+        .sdg-4 .accordion-button { background-color: #C5192D !important; }  /* Quality Education */
+        .sdg-5 .accordion-button { background-color: #FF3A21 !important; }  /* Gender Equality */
+        .sdg-6 .accordion-button { background-color: #26BDE2 !important; }  /* Clean Water and Sanitation */
+        .sdg-7 .accordion-button { background-color: #FCC30B !important; }  /* Affordable and Clean Energy */
+        .sdg-8 .accordion-button { background-color: #A21942 !important; }  /* Decent Work and Economic Growth */
+        .sdg-9 .accordion-button { background-color: #FD6925 !important; }  /* Industry, Innovation, and Infrastructure */
+        .sdg-10 .accordion-button { background-color: #DD1367 !important; } /* Reduced Inequality */
+        .sdg-11 .accordion-button { background-color: #FD9D24 !important; } /* Sustainable Cities and Communities */
+        .sdg-12 .accordion-button { background-color: #BF8B2E !important; } /* Responsible Consumption and Production */
+        .sdg-13 .accordion-button { background-color: #3F7E44 !important; } /* Climate Action */
+        .sdg-14 .accordion-button { background-color: #0A97D9 !important; } /* Life Below Water */
+        .sdg-15 .accordion-button { background-color: #56C02B !important; } /* Life on Land */
+        .sdg-16 .accordion-button { background-color: #00689D !important; } /* Peace, Justice, and Strong Institutions */
+        .sdg-17 .accordion-button { background-color: #19486A !important; } /* Partnerships for the Goals */
+
+
+        /* Text color and padding adjustments for visibility */
+        .accordion-button {
+            color: white;
+        }
+        .accordion-body {
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+
+        <!-- Top navigation -->
+        <div class="topnav">
+
+            <!-- Centered link -->
+            <div class="topnav-centered">
+                <a href="/index.html" class="">UN SDGs</a>
+            </div>
+
+            <!-- Left-aligned links (default) -->
+            <a href="/index.html">Home</a>
+            <a href="/page2.html">About</a>
+
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+                <a href="https://sdgs.un.org/goals">Resources</a>
+                <a href="https://www.undp.org/sustainable-development-goals">Links</a>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-auto emblempic">
+                <a class="image-link" href="/index.html">
+                    <img src="/E_SDG_logo_UN_emblem_horizontal_trans_WEB-1200x188.png" class="img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 10px;">
+            <div class="col-auto">
+                
+                <div class="wrapper">
+                    <div class="container">
+                    <i class="fa fa-bullseye"></i>
+                    <span class="num" data-val="169">000</span>
+                    <span class="text">Targets</span>
+                    </div>
+            
+                    <div class="container">
+                    <i class="fa fa-calendar"></i>
+                    <span class="num" data-val="3965">000</span>
+                    <span class="text">Events</span>
+                    </div>
+            
+                    <div class="container">
+                    <i class="fa fa-book"></i>
+                    <span class="num" data-val="1351">000</span>
+                    <span class="text">Publications</span>
+                    </div>
+            
+                    <div class="container">
+                    <i class="fa fa-check-square"></i>
+                    <span class="num" data-val="7860">000</span>
+                    <span class="text">Actions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row1">
+            <div class="col-12 col-md-6 col1">
+                What are the Sustainable Development Goals?
+            </div>
+            <div class="col-12 col-md-6 col2 textcol">
+                The Sustainable Development Goals (SDGs), also known as the Global Goals, were adopted by the United
+                Nations in 2015 as a universal call to action to end poverty, protect the planet, and ensure that by
+                2030 all people enjoy peace and prosperity.<br><br>
+
+                The 17 SDGs are integrated—they recognize that action in one area will affect outcomes in others, and
+                that development must balance social, economic and environmental sustainability.<br><br>
+
+                Countries have committed to prioritize progress for those who're furthest behind. The SDGs are designed
+                to end poverty, hunger, AIDS, and discrimination against women and girls.<br><br>
+
+                The creativity, knowhow, technology and financial resources from all of society is necessary to achieve
+                the SDGs in every context.
+            </div>
+        </div>
+
+        <div class="row row1">
+            <div class="col-12 col-md-6 col1">
+                Do you know all 17 SDGs?
+            </div>
+            <div class="col-12 col-md-6 textcol">
+                <iframe width="545" height="300" src="https://www.youtube.com/embed/0XTBYMfZyrM?si=4xeNiaT9UMELltyZ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-auto">
+                <h1 class="colhistory">History</h1>
+            <ul style="padding-top: 30px;">
+                <li style="--accent-color:red">
+                    <div class="date">June 1992</div>
+                    <div class="title">Agenda 21 Initiation</div>
+                    <div class="descr">The Earth Summit in Rio de Janeiro, Brazil, led to the adoption of Agenda 21 by over 178 countries, a global action plan for sustainable development.</div>
+                </li>
+                <li style="--accent-color:#FBCA3E">
+                    <div class="date">September 2000</div>
+                    <div class="title">Millennium Development Goals</div>
+                    <div class="descr">The Millennium Summit in New York resulted in the Millennium Development Goals (MDGs), aimed at reducing extreme poverty by 2015.</div>
+                </li>
+                <li style="--accent-color:green">
+                    <div class="date">June 2012</div>
+                    <div class="title">Rio+20 and SDG Foundation</div>
+                    <div class="descr">At the Rio+20 Conference in Brazil, Member States adopted "The Future We Want," initiating the development of the Sustainable Development Goals (SDGs).</div>
+                </li>
+                <li style="--accent-color:#1B5F8C">
+                    <div class="date">September 2015</div>
+                    <div class="title">Adoption of the 2030 Agenda</div>
+                    <div class="descr">The 2030 Agenda for Sustainable Development, including 17 SDGs, was adopted at the UN Sustainable Development Summit in New York, marking a milestone in global policy.</div>
+                </li>
+                <li style="--accent-color:orange">
+                    <div class="date">Ongoing</div>
+                    <div class="title">SDG Review and Support</div>
+                    <div class="descr">The High-level Political Forum on Sustainable Development serves as the central platform for reviewing the SDGs, supported by the UN Department of Economic and Social Affairs.</div>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="row row1 justify-content-center grid">
+            <h1 class="colhistory">Key Topics</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample" style="width: 80%; margin-top: 20px;">
+        
+                <!-- Goal 1: No Poverty -->
+                <div class="accordion-item sdg-1">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Goal 1: No Poverty
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Poverty Eradication</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 2: Zero Hunger -->
+                <div class="accordion-item sdg-2">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Goal 2: Zero Hunger
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Food Security and Nutrition</div>
+                        <div class="accordion-body">Sustainable Agriculture</div>
+                        <div class="accordion-body">Rural Development</div>
+                        <div class="accordion-body">Small Island Developing States</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 3: Good Health and Well-being -->
+                <div class="accordion-item sdg-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Goal 3: Good Health and Well-being
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Health and Population</div>
+                        <div class="accordion-body">National Strategies and SDG Integration</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 4: Quality Education -->
+                <div class="accordion-item sdg-4">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Goal 4: Quality Education
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Inclusive Education</div>
+                        <div class="accordion-body">Lifelong Learning</div>
+                        <div class="accordion-body">Educational Equity</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 5: Gender Equality -->
+                <div class="accordion-item sdg-5">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Goal 5: Gender Equality
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Women's Empowerment</div>
+                        <div class="accordion-body">Gender Equity</div>
+                        <div class="accordion-body">Ending Gender-Based Violence</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 6: Clean Water and Sanitation -->
+                <div class="accordion-item sdg-6">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Goal 6: Clean Water and Sanitation
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Water Quality</div>
+                        <div class="accordion-body">Water Resource Management</div>
+                        <div class="accordion-body">Sanitation and Hygiene</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 7: Affordable and Clean Energy -->
+                <div class="accordion-item sdg-7">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            Goal 7: Affordable and Clean Energy
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Energy Access</div>
+                        <div class="accordion-body">Energy Efficiency</div>
+                        <div class="accordion-body">Renewable Energy</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 8: Decent Work and Economic Growth -->
+                <div class="accordion-item sdg-8">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                            Goal 8: Decent Work and Economic Growth
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Economic Growth</div>
+                        <div class="accordion-body">Employment Opportunities</div>
+                        <div class="accordion-body">Labor Rights</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 9: Industry, Innovation, and Infrastructure -->
+                <div class="accordion-item sdg-9">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                            Goal 9: Industry, Innovation, and Infrastructure
+                        </button>
+                    </h2>
+                    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Infrastructure Development</div>
+                        <div class="accordion-body">Innovation and Technology</div>
+                        <div class="accordion-body">Sustainable Industrialization</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 10: Reduced Inequality -->
+                <div class="accordion-item sdg-10">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                            Goal 10: Reduced Inequality
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Social Inclusion</div>
+                        <div class="accordion-body">Economic Equality</div>
+                        <div class="accordion-body">Reducing Disparities</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 11: Sustainable Cities and Communities -->
+                <div class="accordion-item sdg-11">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                            Goal 11: Sustainable Cities and Communities
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Urban Planning</div>
+                        <div class="accordion-body">Sustainable Housing</div>
+                        <div class="accordion-body">Public Transportation</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 12: Responsible Consumption and Production -->
+                <div class="accordion-item sdg-12">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                            Goal 12: Responsible Consumption and Production
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Sustainable Consumption</div>
+                        <div class="accordion-body">Waste Management</div>
+                        <div class="accordion-body">Sustainable Resource Use</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 13: Climate Action -->
+                <div class="accordion-item sdg-13">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+                            Goal 13: Climate Action
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Climate Change Mitigation</div>
+                        <div class="accordion-body">Adaptation and Resilience</div>
+                        <div class="accordion-body">Policy and Governance</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 14: Life Below Water -->
+                <div class="accordion-item sdg-14">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+                            Goal 14: Life Below Water
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Marine Conservation</div>
+                        <div class="accordion-body">Sustainable Fishing</div>
+                        <div class="accordion-body">Marine Pollution</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 15: Life on Land -->
+                <div class="accordion-item sdg-15">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+                            Goal 15: Life on Land
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Forest Conservation</div>
+                        <div class="accordion-body">Biodiversity Protection</div>
+                        <div class="accordion-body">Land Degradation</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 16: Peace, Justice, and Strong Institutions -->
+                <div class="accordion-item sdg-16">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+                            Goal 16: Peace, Justice, and Strong Institutions
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Peace and Security</div>
+                        <div class="accordion-body">Justice and Rule of Law</div>
+                        <div class="accordion-body">Strong Institutions</div>
+                    </div>
+                </div>
+        
+                <!-- Goal 17: Partnerships for the Goals -->
+                <div class="accordion-item sdg-17">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+                            Goal 17: Partnerships for the Goals
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Global Partnerships</div>
+                        <div class="accordion-body">Resource Mobilization</div>
+                        <div class="accordion-body">Capacity Building</div>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="footer" style="margin: 20px;">
+                <div class="text-center p-3" style="border-top: 2px solid #019cd9;">
+                    © United Nations Sustainable Development Goals
+                  </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+<script>
+    let valueDisplays = document.querySelectorAll(".num");
+let interval = 2000;
+
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+  </script>
+
+</html>

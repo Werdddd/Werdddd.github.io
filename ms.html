@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Multimedia System</title>
+    <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .circle {
+            height: 200px;
+            width: 200px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 0;
+        }
+
+       
+
+            .one{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-01.png);
+            }
+
+            .one:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-01.png);
+            }
+
+            .two{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-02.png);
+            }
+
+            .two:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-02.png);
+            }
+
+            .three{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-03.png);
+            }
+
+            .three:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-03.png);
+            }
+
+            .four{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-04.png);
+            }
+
+            .four:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-04.png);
+            }
+
+            .five{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-05.png);
+            }
+
+            .five:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-05.png);
+            }
+
+            .six{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-06.png);
+            }
+
+            .six:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-06.png);
+            }
+
+            .seven{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-07.png);
+            }
+
+            .seven:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-07.png);
+            }
+
+            .eight{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-08.png);
+            }
+
+            .eight:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-08.png);
+            }
+
+            .nine{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-09.png);
+            }
+
+            .nine:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-09.png);
+            }
+
+            .ten{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-10.png);
+            }
+
+            .ten:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-10.png);
+            }
+
+            .eleven{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-11.png);
+            }
+
+            .eleven:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-11.png);
+            }
+
+            .twelve{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-12.png);
+            }
+
+            .twelve:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-12.png);
+            }
+
+            .thirteen{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-13.png);
+            }
+
+            .thirteen:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-13.png);
+            }
+
+            .fourteen{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-14.png);
+            }
+
+            .fourteen:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-14.png);
+            }
+
+            .fifteen{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-15.png);
+            }
+
+            .fifteen:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-15.png);
+            }
+
+            .sixteen{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-16.png);
+            }
+
+            .sixteen:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-16.png);
+            }
+
+            .seventeen{
+                background-image: url(/bootstrap-5.3.3-dist/E-WEB-Goal-17.png);
+            }
+
+            .seventeen:hover{
+                background-image: url(/bootstrap-5.3.3-dist/E\ Inverted\ Icons_WEB-17.png);
+            }
+
+        .circle {
+            position: relative;
+            height: 200px;
+            width: 200px;
+    
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            animation: rotation 8s infinite linear;
+        }
+
+        @keyframes rotation {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            z-index: 10; /* Ensures the text stays on top */
+            line-height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="row justify-content-center">
+            <div class="col-auto emblem">
+                <img src="/bootstrap-5.3.3-dist/E_SDG_logo_UN_emblem_horizontal_trans_WEB-1200x188.png" style="width: 800px; height: auto;">
+            </div>
+        </div>
+
+        <div class="row container-fluid p-2">
+            <div class="col one"></div>
+            <div class="col two"></div>
+            <div class="col three"></div>
+            <div class="col four"></div>
+            <div class="col five"></div>
+            <div class="col six"></div>
+        </div>
+
+        <div class="row container-fluid p-2">
+            <div class="col seven"></div>
+            <div class="col eight"></div>
+            <div class="col nine"></div>
+            <div class="col ten"></div>
+            <div class="col eleven"></div>
+            <div class="col twelve"></div>
+        </div>
+
+        <div class="row container-fluid p-2">
+            <div class="col thirteen"></div>
+            <div class="col fourteen"></div>
+            <div class="col fifteen"></div>
+            <div class="col sixteen"></div>
+            <div class="col seventeen"></div>
+            <div class="col circle">
+                <a class="image-link" href="https://sdgs.un.org/goals">
+                    <div class="overlay-text">READ MORE</div>
+                    <img src="/bootstrap-5.3.3-dist/SDG-Wheel_WEB-600x600-removebg-preview.png" alt="Rotating Circle">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
